@@ -335,6 +335,7 @@ export default function App() {
       const activeRects = allPageRects[currentPage] || rects;
       drawOverlays(ctx, canvas.width, canvas.height, activeRects);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [imageSrc, mode, wmText, wmSize, wmOpacity, wmDensity, wmSpacing, wmColor, wmRotate, rects, file, allPageRects, currentPage]);
 
   useEffect(() => {
